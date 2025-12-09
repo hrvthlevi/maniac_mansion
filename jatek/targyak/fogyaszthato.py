@@ -1,4 +1,4 @@
-from jatek.targyak import Fogyaszthato, Kulcs_targyak
+from jatek.targyak import Fogyaszthato
 
 sult_hus = Fogyaszthato("Sült hús",5)
 kaktusz_le = Fogyaszthato("Kaktusz lé",1)
