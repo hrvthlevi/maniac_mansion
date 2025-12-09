@@ -1,0 +1,1 @@
+jatekos_nev = ""
