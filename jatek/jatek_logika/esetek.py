@@ -1,8 +1,6 @@
 from jatek.beallitas.tarol import jatekos_nev
 from jatek.helyszinek import bejarat
 
-WIDTH = 120
-
 def eset1():
     print("{:^120}".format("Elrabolták a legjobb barátodat. Készen állsz megmenteni?"))
 
@@ -16,6 +14,26 @@ def eset1():
 
     bejarat.ott_vagyunk = True
 
+def eset2():
+    pass
 
 def eset3():
     print("anyád")
+
+def eset4():
+    pass
+
+def eset5():
+    pass
+
+def eset6():
+    pass
+
+def eset7():
+    pass
+
+def eset8():
+    pass
+
+def eset9():
+    pass
