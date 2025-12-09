@@ -1,4 +1,5 @@
 from jatek.helyszinek import Helyszinek
 from jatek.illusztraciok.hatter import dolgozo
+from jatek.beallitas.tarol import kinezet
 
-dolgozo = Helyszinek(dolgozo,kinezet,True)
+dolgozo = Helyszinek(dolgozo,kinezet,False)
