@@ -1,5 +1,5 @@
 from jatek.beallitas.tarol import jatekos_nev
-from jatek import helyszinek as hely
+from jatek.helyszinek import bejarat
 
 WIDTH = 120
 
@@ -14,4 +14,8 @@ def eset1():
     for sor in szoveg.split("\n"):
         print("{:^120}".format(sor))
 
-    hely.bejarat.ott_vagyunk = True
+    bejarat.ott_vagyunk = True
+
+
+def eset3():
+    print("anyád")
