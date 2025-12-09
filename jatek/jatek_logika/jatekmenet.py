@@ -1,28 +1,28 @@
-import jatek.helyszinek as hely
+from jatek.helyszinek import bejarat, konyha, borton, dolgozo, lepcso_fordulo, kezdokepernyo
 from jatek.targyak import kulcs_targyak as kulcs
 import jatek.jatek_logika.esetek as esetek
 
 def jatekmenet():
     esetek.eset1()
-    if hely.bejarat and kulcs.kulcs:
+    if bejarat and kulcs.kulcs:
         esetek.eset2()
-    elif hely.bejarat:
+    elif bejarat:
             esetek.eset3()
 
-    if hely.postalada:
+    if posta:
         esetek.eset4()
 
-    if hely.konyha and kulcs.level:
+    if konyha and kulcs.level:
         esetek.eset5()
-    elif hely.konyha:
+    elif konyha:
         esetek.eset6()
 
-    if hely.borton:
+    if borton:
         esetek.eset7()
 
-    if hely.lepcso:
+    if lepcso_fordulo:
         esetek.eset8()
-    elif hely.konyha and kulcs.sult_hus:
+    elif konyha and kulcs.sult_hus:
         esetek.eset9()
 
 

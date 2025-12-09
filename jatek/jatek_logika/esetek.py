@@ -1,7 +1,5 @@
 from jatek.beallitas.tarol import jatekos_nev
-from jatek import helyszinek as hely
-
-WIDTH = 120
+from jatek.helyszinek import bejarat
 
 def eset1():
     print("{:^120}".format("Elrabolták a legjobb barátodat. Készen állsz megmenteni?"))
@@ -14,4 +12,28 @@ def eset1():
     for sor in szoveg.split("\n"):
         print("{:^120}".format(sor))
 
-    hely.bejarat.ott_vagyunk = True
+    bejarat.ott_vagyunk = True
+
+def eset2():
+    pass
+
+def eset3():
+    print("anyád")
+
+def eset4():
+    pass
+
+def eset5():
+    pass
+
+def eset6():
+    pass
+
+def eset7():
+    pass
+
+def eset8():
+    pass
+
+def eset9():
+    pass
