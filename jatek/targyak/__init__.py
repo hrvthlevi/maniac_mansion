@@ -5,6 +5,6 @@ class Fogyaszthato:
 
 
 class Kulcs_targyak:
-    def __init__(self,nev,megvan:bool):
+    def __init__(self,nev,megvan):
         self.nev = nev
-        self.megvan = megvan
+        self.megvan = bool(megvan)

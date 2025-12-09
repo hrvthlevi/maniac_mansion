@@ -1,6 +1,5 @@
-class Helyszinek:
-    def __init__(self,hatter_nev,kinezet,ott_vagyunk:bool):
-        hatter_nev = hatter_nev
-        kinezet = kinezet
-        ott_vagyunk = ott_vagyunk
-
+from .bejarat import bejarat
+from .posta import posta
+from .konyha import konyha
+from .borton import borton
+from .lepcso_fordulo import lepcso_fordulo

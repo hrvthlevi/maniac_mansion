@@ -1,5 +1,4 @@
-from jatek.helyszinek import Helyszinek
-from jatek.illusztraciok.hatter import dolgozo
+from .Helyszinek import Helyszinek
 from jatek.beallitas.tarol import kinezet
 
-dolgozo = False
+dolgozo = Helyszinek(hatter_nev="dolgozo", kinezet=kinezet)

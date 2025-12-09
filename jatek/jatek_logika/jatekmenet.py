@@ -1,33 +1,35 @@
-from jatek.helyszinek import bejarat, konyha, borton, dolgozo, lepcso_fordulo, kezdokepernyo, posta
-from jatek.targyak.kulcs_targyak import kulcsok, level
+from jatek.helyszinek import bejarat, posta, konyha, borton, lepcso_fordulo
+import jatek.targyak.kulcs_targyak as kt
 from jatek.targyak import fogyaszthato as etel
 import jatek.jatek_logika.esetek as esetek
 
-
 def jatekmenet():
+
     esetek.eset1()
-    if bejarat.bejarat:
+
+    #bejarat
+    if bejarat.ott_vagyunk:
         esetek.eset3()
-        if bejarat.bejarat and kulcsok:
+        if kt.kulcs.megvan:
             esetek.eset2()
 
-    if posta:
+    #posta
+    if posta.ott_vagyunk:
         esetek.eset4()
 
-    if konyha and level:
-        esetek.eset5()
-    elif konyha:
-        esetek.eset6()
+    #konyha
+    if konyha.ott_vagyunk:
+        if kt.level.megvan:
+            esetek.eset5()
+        elif etel.sult_hus:
+            esetek.eset9()
+        else:
+            esetek.eset6()
 
-    if borton:
+    #borton
+    if borton.ott_vagyunk:
         esetek.eset7()
 
-    if lepcso_fordulo:
+    #lepcso
+    if lepcso_fordulo.ott_vagyunk:
         esetek.eset8()
-    elif konyha and etel.sult_hus:
-        esetek.eset9()
-
-
-
-
-
