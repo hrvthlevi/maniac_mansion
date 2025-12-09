@@ -1,4 +1,5 @@
 from jatek.beallitas.tarol import jatekos_nev
+from jatek import helyszinek as hely
 
 WIDTH = 120
 
@@ -13,4 +14,4 @@ def eset1():
     for sor in szoveg.split("\n"):
         print("{:^120}".format(sor))
 
-eset1()
+    hely.bejarat.ott_vagyunk = True
