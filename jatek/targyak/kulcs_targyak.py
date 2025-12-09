@@ -1,4 +1,4 @@
 level = False
-kulcs = False
+kulcsok = False
 kotel = False
 lampa = False

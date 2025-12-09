@@ -1,6 +1,7 @@
 from jatek.beallitas.tarol import jatekos_nev
 from jatek.helyszinek import bejarat
-from jatek.targyak import kulcs_targyak as kulcs
+from jatek.targyak.kulcs_targyak import kulcsok
+import jatek.targyak.kulcs_targyak
 
 def eset1():
     print("{:^120}".format("Elrabolták a legjobb barátodat. Készen állsz megmenteni?"))
@@ -16,22 +17,28 @@ def eset1():
     bejarat.bejarat = True
 
 def eset2():
-    print("Most már kinyithatod az ajtót")
+    print("{:^120}".format("Most már kinyithatod az ajtót"))
     konyha = True
 
 def eset3():
-    print("Nem tudsz bemenni a házba, keresd meg a kulcsot")
-    print("keresés a lábtörlő alatt/kopogj az ajtón: 1/2")
+    print(f"\n")
+    print("{:^120}".format("Nem tudsz bemenni a házba, keresd meg a kulcsot"))
+    print("{:^120}".format("keresés a lábtörlő alatt/kopogj az ajtón: 1/2"))
     valasztas = int(input("válassz: "))
-    while valasztas != 1 or valasztas != 2:
+    while valasztas != 1 and valasztas != 2:
         valasztas = int(input("válassz: "))
     if valasztas == 1:
-        print("Megtaláltad a kulcsot!")
-        kulcs.kulcs == True
+        print(f"\n")
+        print("{:^120}".format("Megtaláltad a kulcsot!"))
+        jatek.targyak.kulcs_targyak.kulcsok = True
+        eset2()
     else:
-        print("Senki nem nyitott ajtót. Megnézed a lábtörlőt.")
-        print("Megtaláltad a kulcsot!")
-        kulcs.kulcs == True
+        print(f"\n")
+        print("{:^120}".format("Senki nem nyitott ajtót. Megnézed a lábtörlőt."))
+        print("{:^120}".format("Megtaláltad a kulcsot!"))
+        jatek.targyak.kulcs_targyak.kulcsok = True
+        eset2()
+
 
 def eset4():
     pass
@@ -40,7 +47,8 @@ def eset5():
     pass
 
 def eset6():
-    pass
+    print(f"\n")
+    print("{:^120}".format("Belépsz a konyhába."))
 
 def eset7():
     pass
