@@ -1,4 +1,4 @@
-from jatek.targyak import Kulcs_targyak
+from Kulcs_t import Kulcs_targyak
 
 level = Kulcs_targyak("Levél", False)
 kulcs = Kulcs_targyak("Kulcs", False)

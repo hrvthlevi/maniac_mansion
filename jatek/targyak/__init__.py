@@ -1,10 +1,3 @@
-class Fogyaszthato:
-    def __init__(self,nev,hp:int):
-        self.nev = nev
-        self.hp = hp
+from .fogyaszthato_targyak import Fogyaszthato
+from .kulcs_targyak import Kulcs_targyak
 
-
-class Kulcs_targyak:
-    def __init__(self,nev,megvan):
-        self.nev = nev
-        self.megvan = bool(megvan)
