@@ -1,6 +1,6 @@
 from jatek.helyszinek import bejarat, posta, konyha, borton, lepcso_fordulo
 import jatek.targyak.kulcs_targyak as kt
-from jatek.targyak import fogyaszthato as etel
+from jatek.targyak import fogyaszthato_targyak as etel
 import jatek.jatek_logika.esetek as esetek
 
 def jatekmenet():

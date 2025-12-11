@@ -1,5 +1,4 @@
-from jatek.targyak import Fogyaszthato
-
-sult_hus = Fogyaszthato("Sült hús",5)
-kaktusz_le = Fogyaszthato("Kaktusz lé",1)
-gipsz_gyumi = Fogyaszthato("Gipsz gyümi",-2)
+class Fogyaszthato:
+    def __init__(self,nev,hp:int):
+        self.nev = nev
+        self.hp = hp
